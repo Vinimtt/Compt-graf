@@ -46,16 +46,6 @@ void dda(int x1, int y1, int x2, int y2)
     }
 }
 void vertice() {
-    // Limpa o buffer de pixels
-    
-
-    // Desenha o quadrado
-   
-    glBegin(GL_LINE);
-    glVertex2f(-0.2, 0.3);
-    glVertex2f(-0.2, -0.3);
-
-    glEnd();
 
     // Inicia o processo de desenho através dos dados bufferizados
     glFlush();
@@ -83,7 +73,7 @@ int main(void)
     while (!glfwWindowShouldClose(window))
     {
        
-        /* Render here */
+        //especificações da linha
         glClear(GL_COLOR_BUFFER_BIT);
         dda(0,0,5,5);
         /* Swap front and back buffers */
